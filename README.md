@@ -6,9 +6,10 @@ The **\_printf()** function writes output to **stdout**, the standard output str
 
 The **\_printf()** function returns the total number of characters printed to **stdout** (excluding the null byte at the end of strings) upon successful execution. In case of an output error, a negative value of -1 is returned.
 
-## **Prototype:**
+## **Prototype:** 
+'''
 int _printf(const char *format, ...);
-
+'''
 The function has one mandatory format argument and an additional variable number of arguments.
 
 ## **Format of the Format String**
