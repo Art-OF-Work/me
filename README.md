@@ -9,7 +9,7 @@ The **\_printf()** function returns the total number of characters printed to **
 ## **Prototype:** 
 ```c
 int _printf(const char *format, ...);
-
+```
 The function has one mandatory format argument and an additional variable number of arguments.
 
 ## **Format of the Format String**
