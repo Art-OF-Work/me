@@ -35,7 +35,7 @@ An optional precision, in the form of a period (.) followed by a decimal digit s
 ## **Conversion Specifier**
 |**Specifier**|	Description|
 |--|--|
-|**d, i**| Convert the argument int to a signed decimal notation.|
+|**d, i**| Convert the argument **int** to a signed decimal notation.|
 |**o, u, x, X**|Convert the argument to unsigned octal (**o**), decimal (**u**), or hexadecimal (**x** and **X**).|
 |**c**| Convert the **int** argument to an unsigned char and write the resulting character.|
 |**s**| Expect a pointer type **char\*** to an array of characters; print characters until null byte ('\0').|
@@ -43,8 +43,8 @@ An optional precision, in the form of a period (.) followed by a decimal digit s
 |**%**| Write the character '%'; no conversion is made.|
 |**b**| Convert the argument to an unsigned int and print its binary representation (base 2).|
 |**S**| Expect a pointer type **char***; print characters until null byte ('\0'). Non-printable characters are represented as **\x** followed by the ASCII code value in hexadecimal|
-|**r**| Expect a pointer type char*; print characters in reverse order until null byte ('\0').|
-|**R**| Expect a pointer type char*; encode characters to ROT13 and print until null byte ('\0').|
+|**r**| Expect a pointer type **char***; print characters in reverse order until null byte ('\0').|
+|**R**| Expect a pointer type **char***; encode characters to ROT13 and print until null byte (**'\0'**).|
 
 ## **Author**
 
