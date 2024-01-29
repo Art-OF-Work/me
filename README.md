@@ -1,4 +1,4 @@
-#Printf Function - Team Project
+# Printf Function - Team Project
 This team project is a custom-made **printf** function for the C programming language named **/_printf** . It has been optimized to handle various inputs and optional arguments, following the format conventions of the standard library function **printf**. This submission is part of the ALX software engineering course requirements for grading.
 
 ## **Synopsis**
