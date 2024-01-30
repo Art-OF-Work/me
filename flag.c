@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * get_flags - gets the flags from the format string
  * @format: the format string
@@ -7,7 +7,7 @@
  *
  * Return: the flags
  */
-int find_flags(const char *format, int *i)
+int get_flags(const char *format, int *i)
 {
 	int flags = 0;
 	const char *flag_chars = "-+0# ";

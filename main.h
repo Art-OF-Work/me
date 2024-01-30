@@ -24,7 +24,7 @@ typedef struct fmt fmt_t;
 #define S_SHORT 1
 /***********************FIRST***********************/
 
-int find_flags(const char *format, int *i);
+int get_flags(const char *format, int *i);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);

@@ -17,12 +17,12 @@
 int print_hexa(va_list types, char map_to[], char buffer[], int flags, char flag_ch, int width, int precision, int size)
 {
 	int count = 0;
-	unsigned int n = va_arg(types, unsigned int);
+	unsigned int m = va_arg(types, unsigned int);
 
 	if (size == 1)
-		n = (unsigned long int) n;
+		m = (unsigned long int) m;
 	else if (size == -1)
-		n = (unsigned short int) n;
+		m = (unsigned short int) m;
 
 	if (n == 0)
 	{
@@ -34,11 +34,11 @@ int print_hexa(va_list types, char map_to[], char buffer[], int flags, char flag
 	{
 		int ind = -1;
 
-		while (n > 0)
+		while (m > 0)
 		{
 			ind++;
-			buffer[ind] = map_to[n % 16];
-			n /= 16;
+			buffer[ind] = map_to[m % 16];
+			m /= 16;
 		}
 
 		if (flags & F_HASH && flag_ch != ' ')
