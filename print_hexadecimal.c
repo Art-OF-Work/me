@@ -21,7 +21,8 @@ int print_hexadecimal(va_list types, char buffer[], int flags, int width, int pr
 	else if (size == -1)
 		n = (unsigned short int) n;
 
-	count += print_hexa(n, buffer, flags, width, precision, size, 0);
+	count += print_hexa(types, "0123456789ABCDEF", buffer,
+		flags, 'X', width, precision, size);
 
 	return (count);
 }

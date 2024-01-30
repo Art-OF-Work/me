@@ -51,6 +51,7 @@ int write_num(int ind, char buffer[], int flags, int width, int prec, int length
 int write_number(int is_negative, int ind, char buffer[], int flags, int width, int precision, int size);
 int write_pointer(char buffer[], int ind, int length, int width, int flags, char padd, char extra_c, int padd_start);
 int write_unsgnd(int is_negative, int ind, char buffer[], int flags, int width, int precision, int size);
+int write_padding(int count, char c);
 
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[], int flags, int width, int precision, int size);
 

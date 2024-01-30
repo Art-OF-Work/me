@@ -1,5 +1,7 @@
 #include <stdarg.h>
 
+int write_unsgnd(int is_negative, int ind, char buffer[], int flags, int width, int precision, int size);
+
 /**
  * print_unsigned - prints an unsigned integer
  * @types: list of arguments

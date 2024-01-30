@@ -45,7 +45,7 @@ int write_number(int is_negative, int ind, char buffer[], int flags, int width, 
 		count += write(1, " ", 1);
 
 	count += write_padding(precision - len, '0');
-	count += write_num(ind, buffer);
+	/*count += write_num(ind, buffer);*/
 
 	if (flags & F_MINUS)
 		count += write_padding(width, ' ');

@@ -24,7 +24,7 @@ int print_hexa(va_list types, char map_to[], char buffer[], int flags, char flag
 	else if (size == -1)
 		m = (unsigned short int) m;
 
-	if (n == 0)
+	if (m == 0)
 	{
 		buffer[0] = '0';
 		int ind = 0;
